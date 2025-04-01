@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ppopup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        </div>
+        <ul class="navlist">
+           <li><a href="../Home/phone shop.html">Home</a></li>
+           <li><a href="../Product/product.html">Product</a></li>
+           <li><a href="../About Us/About us.html">About Us</a></li>
+           <li><a href="../contact/contact.html">Contact</a></li>
+           <li><a href="../Login.html">Log In</a></li>
+           <li class="slider"></li>
+           
+        </ul>
+       </div> 
+    <div class="class">
+        <button type="submit" class="btn" onclick="openpopup()">Register for events</button>
+        <div class="popup" id="popup">
+            <img src="popup.jpg">
+            <h2>Thank You! </h2>
+            <p>Your Registation has been placed successfully. Thanks!</p>
+            <button type="button"  onclick="closepopup()">OK</button>
+        </div>
+    </div>
+    
+<script>
+    let popup = document.getElementById("popup");
+    function openpopup(){
+        popup.classList.add("open-popup");
+            
+        
+    }
+    function closepopup(){
+        popup.classList.remove("open-popup");
+            
+        
+    }
+</script>
+
+
+</body>
+</html>
